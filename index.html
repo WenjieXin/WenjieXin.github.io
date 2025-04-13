@@ -1,7 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wenjie Xin | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 80px 20px 40px;
+      text-align: center;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 20px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0077cc;
+      display: inline-block;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>UX Designer & Web Developer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>Hello! I’m a designer and developer with a passion for creating clean, elegant digital experiences. With a background in UI/UX and web development, I blend form and function to build intuitive products.</p>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A modern one-page website showcasing my work, built with HTML, CSS, and a touch of JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>E-Commerce Store</h3>
+        <p>A full-featured online store with a shopping cart, product filters, and payment integration.</p>
+      </div>
+      <div class="project-card">
+        <h3>Brand Identity Design</h3>
+        <p>Logo and brand guidelines for a lifestyle startup with a focus on minimal aesthetics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>📧 Email me at <a href="mailto:wenjiexinbusiness@gmail.com">wenjiexinbusiness@gmail.com</a>  
+    <br>🔗 Connect on <a href="https://www.linkedin.com/in/wenjie-xin/">LinkedIn</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Wenjie X — Built with love & HTML ✨
+  </footer>
+
 </body>
 </html>
+
